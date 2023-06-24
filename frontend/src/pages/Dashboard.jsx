@@ -27,7 +27,6 @@ function Dashboard() {
     dispatch(getGoals());
 
     return () => {
-      console.log('INSIDE RETURN USEEFFECT')
       dispatch(reset());
     };
   }, [user, navigate, isError, message, dispatch]);
